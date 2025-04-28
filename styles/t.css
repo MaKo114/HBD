@@ -1,0 +1,137 @@
+html{
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+}
+}
+
+  
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start; /* เปลี่ยนเป็น start ดีกว่า center ถ้าแนวตั้งยาว */
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    width: 100vw;
+    min-height: 100vh;
+    
+}
+
+.hbd {
+    width: 100%;
+    max-width: 600px; /* หรือกำหนดขนาดตามที่ต้องการ */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#hap{
+    margin-top: 15%;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+#day{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-weight: 1000;
+    color: #fff;
+    font-size: 3rem;
+}
+#toName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#name{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 1000;
+    color: #fff;
+}
+
+
+.pic{
+    margin-top: 5%;
+}
+.swiper {
+    width: 90vw; /* 90% ของความกว้างหน้าจอ */
+    max-width: 235px; /* แต่ถ้าจอกว้างพอก็ไม่เกิน 220px */
+    height: 350px;
+    box-sizing: border-box;
+  }
+  
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    max-width: 800px; /* จำกัดขนาดเพื่อไม่ให้ล้น */
+    margin: 20px auto; /* ตั้งให้อยู่กลาง */
+  }
+  .swiper-slide img {
+    width: 100%; /* ให้รูปปรับขนาดให้พอดีกับความกว้างของการ์ด */
+    height: 100%; /* ให้รูปปรับขนาดให้พอดีกับความสูงของการ์ด */
+    object-fit: cover; /* ปรับรูปให้อยู่เต็มพื้นที่โดยไม่เสียสัดส่วน */
+    border-radius: 10px; /* ทำมุมโค้งมนให้ภาพ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    border-radius: 18px; /* ทำให้มุมของรูปเข้ากันกับมุมของการ์ด */
+    object-fit: cover;
+  }
+#sparkles{
+    position: absolute;
+    display: inline;
+    z-index: 1;
+    top: 5%;
+    right: 15%;
+    height: 10%;
+    width: 20%;
+}
+.cake{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+        
+}
+#bdcake{
+    height: 10%;
+    width: 20%;
+}
+.video video{
+    height: 50%;
+    width: 70%;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}

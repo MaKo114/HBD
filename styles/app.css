@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+  padding-right: 0;
+
+  height: 350vh;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  /* background-color: #d2d2d2; */
+  /* background: linear-gradient(to right, #d2d2d2 60%, transparent);  background-size: cover; */
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+.container {
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 3rem;
+  color: #fff;
+}
+.pic {
+  margin: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.swiper {
+  width: 200px;
+  height: 320px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  max-width: 800px; /* จำกัดขนาดเพื่อไม่ให้ล้น */
+  margin: 20px auto; /* ตั้งให้อยู่กลาง */
+}
+.swiper-slide img {
+  width: 100%; /* ให้รูปปรับขนาดให้พอดีกับความกว้างของการ์ด */
+  height: 100%; /* ให้รูปปรับขนาดให้พอดีกับความสูงของการ์ด */
+  object-fit: cover; /* ปรับรูปให้อยู่เต็มพื้นที่โดยไม่เสียสัดส่วน */
+  border-radius: 10px; /* ทำมุมโค้งมนให้ภาพ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+  border-radius: 18px; /* ทำให้มุมของรูปเข้ากันกับมุมของการ์ด */
+}
+
+.context {
+  margin-top: 80px;
+}
+.porn {
+  padding: 30px;
+  margin: 30px;
+  border-radius: 20px;
+  background-color: white;
+}
+.music{
+    padding: 20px;
+}
+.music iframe {
+    width: 100%;
+    max-width: 640px; /* จำกัดความกว้างสูงสุด */
+    height: auto;
+    aspect-ratio: 16 / 9; /* รักษาสัดส่วนวิดีโอ */
+  }
+  .musiccontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }

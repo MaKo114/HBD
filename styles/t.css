@@ -176,23 +176,24 @@ body {
     align-items: center;
     margin-top: 10%;
     margin-bottom: 10%;
+    
 }
 
 .c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     
 }
 
-input {
+input[type="text"] {
     width: 60%;
     height: 100%;
-    margin: 0 6px;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -203,6 +204,7 @@ input {
     background-color: #fff8f0;
     color: rgb(255, 162, 244);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 
 }
 

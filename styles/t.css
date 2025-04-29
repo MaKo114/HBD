@@ -175,6 +175,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .c {
@@ -208,7 +209,7 @@ input {
 .btn {
     display: flex;
     justify-content: center;
-    margin: 2%;
+    margin: 5%;
 }
 
 button {

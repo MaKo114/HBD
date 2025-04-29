@@ -1,52 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HBD</title>
+    <link rel="stylesheet" href="styles/t.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="icon"
+      type="image.png"
+      href="https://icon-library.com/images/cake-icon-png/cake-icon-png-15.jpg"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/style.css">
+  <body>
+    <div class="hbd">
+      <div class="text">
+        <h1 id="hap">HAPPY</h1>
+      </div>
 
-  <!-- Demo styles -->
+      <div class="text">
+        <h1 id="day">BIRTHDAY</h1>
+      </div>
 
-</head>
+      <div class="text" id="toName">
+        <h1 id="name">TONFON</h1>
+      </div>
 
-<body>
-  <!-- Swiper -->
+      <div class="pic">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/images/fon3.jpeg" alt="Card Image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/fon4.jpeg" alt="Card Image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/fon5.jpg" alt="Card Image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/fon8.jpg" alt="Card Image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/fon7.jpg" alt="Card Image" />
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="/images/1164134.png" alt=""></div>
-      <div class="swiper-slide"><img src="/images/cake.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="/images/gachahe.png" alt=""></div>
-      <div class="swiper-slide"><img src="/images/velona.jpg" alt=""></div>
-    </div>
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
+      <div class="cake">
+        <img id="bdcake" src="/images/birthday-cake_1f382.png" alt="" />
+      </div>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <div class="video">
+        <video
+          src="/images/Blackbeans - Pink (Lyric Video).mp4"
+          controls
+        ></video>
+      </div>
+      <div class="emoji"></div>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-</body>
+      <div class="charname">
 
+        <div class="c">
+          <input type="text" maxlength="1" class="charip" id="c1">
+        </div>
+
+        <div class="c">
+          <input type="text" maxlength="1" class="charip" id="c2">
+        </div>
+
+        <div class="c">
+          <input type="text" maxlength="1" class="charip" id="c3">
+        </div>
+
+        <div class="c">
+          <input type="text" maxlength="1" class="charip" id="c4">
+        </div>
+
+        <div class="c">
+          <input type="text" maxlength="1" class="charip" id="c5">
+        </div>
+
+        <div class="c">
+          <input type="text" maxlength="1" class="charip" id="c6">
+        </div>
+
+      </div>
+
+      <div class="btn">
+        <button id="enter" onclick="checkPassword()">ENTER</button>
+      </div>
+
+      <div class="showtext" id="showtext">
+       <!-- style="display: none;" -->
+        <div id="hbdtext" style="display: none;"> 
+          <p id="firsttext">สุขสันต์วันเกิดนะครับต้นฝน
+          <img id="fstar" src="/images/sparkles_2728.png" alt=""></p>
+          <p id="phbd">ขอให้วันพิเศษของเธอเต็มไปด้วยรอยยิ้ม เสียงหัวเราะ และความทรงจำดีๆ มากมาย ไม่รู้จะเซอร์ไพรส์อะไร คิดไม่ออกเลยทำเว็บซะเลย (จะสมกับที่เรียนมา ฮ่าๆ) ไม่รู้ว่าจะดีหรือถูกใจไหมยังไม่เก่งมาก แต่ก็พยายามตั้งใจทำให้ออกมาดีที่สุด สุดท้ายนี้ก็อยากบอกว่า อย่าลืมยื้มเยอะๆ นะ </p>
+          <p id="endtext">"กินบ๊วยเค็มแล้วปากจู๋ แปลงร่างเป็นซุปเปอร์แมน"</p>
+        </div>
+
+      </div>
+<!-- -->
+     <div class="hiddenpic">
+      <div class="hiddenpic" id="hiddenpicuture" style="display: none" >
+        <img id="hidden" src="images/fon2.jpeg" alt="">
+        <img id="crown" src="images/crown_1f451.png" alt="">
+      </div>
+     </div>
+        
+          
+        
+
+      </div>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+
+  </body>
 </html>

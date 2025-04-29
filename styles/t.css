@@ -23,6 +23,7 @@ body {
     /* เปลี่ยนเป็น start ดีกว่า center ถ้าแนวตั้งยาว */
     background: linear-gradient(to right, #ff9a9e, #fad0c4);
     height: 170vh;
+    animation: fadeIn 2s ease-in-out;
  
 
 }
@@ -175,6 +176,7 @@ body {
     align-items: center;
     margin-top: 10%;
     padding: 10%;
+    gap: 12px;
     
 }
 
@@ -190,8 +192,9 @@ body {
 }
 
 input {
-    width: 40%;
+    width: 60%;
     height: 100%;
+    margin: 0 6px;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -263,7 +266,7 @@ button {
     color: #333;
     /* สีตัวอักษร */
     font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
-    animation: fadeIn 2s ease-in-out;
+    
     /* แอนิเมชั่นสำหรับข้อความแรก */
 
 }
@@ -276,7 +279,7 @@ button {
     color: #333;
     /* สีตัวอักษร */
     font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
-    animation: fadeIn 2s ease-in-out;
+    
 }
 #fstar{
     width: 10%;

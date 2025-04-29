@@ -20,7 +20,7 @@ body {
     align-items: start; /* เปลี่ยนเป็น start ดีกว่า center ถ้าแนวตั้งยาว */
     background: linear-gradient(to right, #ff9a9e, #fad0c4);
     width: 100vw;
-    min-height: 100vh;
+    min-height: 400vh;
     
 }
 
@@ -128,10 +128,12 @@ body {
 .video video{
     height: 50%;
     width: 70%;
+    border-radius: 10px;
 }
 .video{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    
 }

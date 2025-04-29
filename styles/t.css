@@ -1,37 +1,41 @@
-html{
+html {
     font-size: 16px;
-    font-family: "Arial", sans-serif;
-    
-}
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-}
+    font-family: 'Roboto', sans-serif;
+
 }
 
-  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 body {
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: start; /* เปลี่ยนเป็น start ดีกว่า center ถ้าแนวตั้งยาว */
+    align-items: start;
+    /* เปลี่ยนเป็น start ดีกว่า center ถ้าแนวตั้งยาว */
     background: linear-gradient(to right, #ff9a9e, #fad0c4);
-    width: 100vw;
-    min-height: 400vh;
-    
+    height: 170vh;
+ 
+
 }
 
 .hbd {
     width: 100%;
-    max-width: 600px; /* หรือกำหนดขนาดตามที่ต้องการ */
+    max-width: 600px;
+    /* หรือกำหนดขนาดตามที่ต้องการ */
     padding: 20px;
     box-sizing: border-box;
 }
 
-.text{
+.text {
     padding: 0;
     margin: 0;
     display: flex;
@@ -39,7 +43,8 @@ body {
     align-items: center;
 
 }
-#hap{
+
+#hap {
     margin-top: 15%;
     margin-bottom: 0;
     padding: 0;
@@ -49,7 +54,8 @@ body {
     display: flex;
     justify-content: center;
 }
-#day{
+
+#day {
     display: flex;
     justify-content: center;
     padding: 0;
@@ -58,14 +64,17 @@ body {
     color: #fff;
     font-size: 3rem;
 }
-#toName{
+
+#toName {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+    margin-top: 2%;
+
+
 }
-#name{
+
+#name {
     margin: 0;
     font-size: 3rem;
     font-weight: 1000;
@@ -73,18 +82,23 @@ body {
 }
 
 
-.pic{
+.pic {
     margin-top: 5%;
+    
 }
+
 .swiper {
-    width: 90vw; /* 90% ของความกว้างหน้าจอ */
-    max-width: 235px; /* แต่ถ้าจอกว้างพอก็ไม่เกิน 220px */
+    width: 90vw;
+    /* 90% ของความกว้างหน้าจอ */
+    max-width: 235px;
+    /* แต่ถ้าจอกว้างพอก็ไม่เกิน 220px */
     height: 350px;
     box-sizing: border-box;
-  }
-  
-  
-  .swiper-slide {
+    
+}
+
+
+.swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,19 +107,30 @@ body {
     font-weight: bold;
     color: #fff;
     width: 100%;
-    max-width: 800px; /* จำกัดขนาดเพื่อไม่ให้ล้น */
-    margin: 20px auto; /* ตั้งให้อยู่กลาง */
-  }
-  .swiper-slide img {
-    width: 100%; /* ให้รูปปรับขนาดให้พอดีกับความกว้างของการ์ด */
-    height: 100%; /* ให้รูปปรับขนาดให้พอดีกับความสูงของการ์ด */
-    object-fit: cover; /* ปรับรูปให้อยู่เต็มพื้นที่โดยไม่เสียสัดส่วน */
-    border-radius: 10px; /* ทำมุมโค้งมนให้ภาพ */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
-    border-radius: 18px; /* ทำให้มุมของรูปเข้ากันกับมุมของการ์ด */
+    max-width: 800px;
+    /* จำกัดขนาดเพื่อไม่ให้ล้น */
+    margin: 20px auto;
+    /* ตั้งให้อยู่กลาง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide img {
+    width: 100%;
+    /* ให้รูปปรับขนาดให้พอดีกับความกว้างของการ์ด */
+    height: 100%;
+    /* ให้รูปปรับขนาดให้พอดีกับความสูงของการ์ด */
     object-fit: cover;
-  }
-#sparkles{
+    /* ปรับรูปให้อยู่เต็มพื้นที่โดยไม่เสียสัดส่วน */
+    border-radius: 10px;
+    /* ทำมุมโค้งมนให้ภาพ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงา */
+    border-radius: 18px;
+    /* ทำให้มุมของรูปเข้ากันกับมุมของการ์ด */
+    object-fit: cover;
+}
+
+/* #sparkles {
     position: absolute;
     display: inline;
     z-index: 1;
@@ -113,27 +138,212 @@ body {
     right: 15%;
     height: 10%;
     width: 20%;
+} */
+
+.cake {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+
 }
-.cake{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20%;
-        
-}
-#bdcake{
+
+#bdcake {
     height: 10%;
     width: 20%;
 }
-.video video{
+
+.video video {
     height: 50%;
     width: 70%;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.video{
+
+.video {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
     
+
+}
+
+.charname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 10%;
+    
+}
+
+.c {
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input {
+    width: 60%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+    background-color: #fff8f0;
+    color: rgb(255, 162, 244);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+button {
+    
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+    background-color: rgb(226, 169, 169);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enter {
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) , 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.showtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    /* margin-top: 35%; */
+}
+
+#hbdtext {
+    display: block;
+    /* ทำให้ข้อความแสดงผล */
+    padding: 20px;
+    /* เพิ่มระยะห่างภายใน */
+    margin: 20px auto;
+    /* จัดให้อยู่กลาง */
+    background-color: #f9f9f9;
+    /* เพิ่มพื้นหลังสีอ่อน */
+    border-radius: 10px;
+    /* ทำมุมโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงา */
+
+}
+
+#phbd {
+    margin: 0;
+    font-size: 18px;
+    /* ขนาดตัวอักษร */
+    line-height: 1.8;
+    /* ระยะห่างระหว่างบรรทัด */
+    color: #333;
+    /* สีตัวอักษร */
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+    animation: fadeIn 2s ease-in-out;
+    /* แอนิเมชั่นสำหรับข้อความแรก */
+
+}
+#firsttext{
+    margin: 0;
+    font-size: 18px;
+    /* ขนาดตัวอักษร */
+    line-height: 1.8;
+    /* ระยะห่างระหว่างบรรทัด */
+    color: #333;
+    /* สีตัวอักษร */
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+    animation: fadeIn 2s ease-in-out;
+}
+#fstar{
+    width: 10%;
+}
+#hbdtext p:last-child {
+    margin-top: 20px;
+    /* เพิ่มระยะห่างระหว่างข้อความ */
+    font-style: italic;
+    /* ทำให้ข้อความดูเด่น */
+    color: #555;
+    /* สีที่อ่อนลง */
+    animation: fadeIn 3s ease-in-out;
+    /* ข้อความสุดท้ายปรากฏช้ากว่า */
+
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* เริ่มจากตำแหน่งที่ต่ำกว่า */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* เลื่อนมาในตำแหน่งเดิม */
+    }
+}
+
+#hbdtext {
+    animation: fadeInUp 2s ease-in-out;
+    /* ใช้แอนิเมชั่น fadeInUp */
+}
+
+.hiddenpic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#hiddenpicuture {
+    display: flex; /* ใช้ Flexbox เพื่อจัดการตำแหน่งลูกภายใน */
+    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+    width: 80%;
+    height: auto; /* ให้ขนาดรูปปรับตามเนื้อหา */
+    
+}
+
+#hidden {
+    width: 100%; /* รูปภาพครอบคลุมพื้นที่ */
+    height: auto; /* รักษาสัดส่วนของรูปภาพ */
+    object-fit: cover; /* ป้องกันการบิดเบี้ยวของรูปภาพ */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+}
+
+#crown{
+    position: absolute;
+    top: -30;
+    right: 0;
+    transform: rotate(20deg);
+    width: 20%;
+    height: 15%;
 }

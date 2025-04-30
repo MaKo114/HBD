@@ -1,351 +1,308 @@
 html {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
-
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    /* เปลี่ยนเป็น start ดีกว่า center ถ้าแนวตั้งยาว */
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
-    height: 170vh;
-    animation: fadeIn 2s ease-in-out;
- 
-
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  /* height: 170vh; */
+  height: 170vh;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .hbd {
-    width: 100%;
-    max-width: 600px;
-    /* หรือกำหนดขนาดตามที่ต้องการ */
-    padding: 20px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 10%;
 }
 
 .text {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
 
+.dao {
+  width: 15%;
+  vertical-align: middle;
 }
 
 #hap {
-    margin-top: 15%;
-    margin-bottom: 0;
-    padding: 0;
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: #fff;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #fff;
 }
 
 #day {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    font-weight: 1000;
-    color: #fff;
-    font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 3rem;
 }
-
-#toName {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-
-
-}
-
 #name {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 1000;
-    color: #fff;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 2%;
 }
-
-
 .pic {
-    margin-top: 5%;
-    
+  margin-top: 5%;
 }
-
 .swiper {
-    width: 90vw;
-    /* 90% ของความกว้างหน้าจอ */
-    max-width: 235px;
-    /* แต่ถ้าจอกว้างพอก็ไม่เกิน 220px */
-    height: 350px;
-    box-sizing: border-box;
-    
+  width: 90vw;
+  max-width: 235px;
+  height: 350px;
+  box-sizing: border-box;
 }
-
-
 .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-    width: 100%;
-    max-width: 800px;
-    /* จำกัดขนาดเพื่อไม่ให้ล้น */
-    margin: 20px auto;
-    /* ตั้งให้อยู่กลาง */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-slide img {
-    width: 100%;
-    /* ให้รูปปรับขนาดให้พอดีกับความกว้างของการ์ด */
-    height: 100%;
-    /* ให้รูปปรับขนาดให้พอดีกับความสูงของการ์ด */
-    object-fit: cover;
-    /* ปรับรูปให้อยู่เต็มพื้นที่โดยไม่เสียสัดส่วน */
-    border-radius: 10px;
-    /* ทำมุมโค้งมนให้ภาพ */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* เพิ่มเงา */
-    border-radius: 18px;
-    /* ทำให้มุมของรูปเข้ากันกับมุมของการ์ด */
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+  object-fit: cover;
 }
-
-/* #sparkles {
-    position: absolute;
-    display: inline;
-    z-index: 1;
-    top: 5%;
-    right: 15%;
-    height: 10%;
-    width: 20%;
-} */
-
 .cake {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
 }
-
 #bdcake {
-    height: 10%;
-    width: 20%;
+  height: 10%;
+  width: 20%;
 }
-
 .video video {
-    height: 50%;
-    width: 70%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 50%;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
-
 .charname {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
-
 .c {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
-
 input[type="text"] {
-    width: 100%;
-    height: 100%;
-    padding: 10%;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 1000;
-    text-transform: uppercase;
-    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
-    background-color: #fff8f0;
-    color: rgb(255, 162, 244);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Single Day", cursive;
+  background-color: #fff8f0;
+  color: rgb(255, 162, 244);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .btn {
-    display: flex;
-    justify-content: center;
-    margin: 5%;
+  margin: 5%;
 }
-
-button {
-    border-radius: 10px;
-    height: 40px;
-    width: 70px;
-    background-color: rgb(255, 160, 206);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+#cilckhere p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000000;
+  margin: 0;
+}
 #enter {
-    border: none;
-    color: rgb(255, 255, 255);
-    font-weight: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) , 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border: none;
+}
+#gift {
+  width: 4em;
+  vertical-align: middle;
 }
 
 .showtext {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    border-radius: 10px;
-    /* margin-top: 35%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
 }
 
 #hbdtext {
-    display: block;
-    /* ทำให้ข้อความแสดงผล */
-    padding: 20px;
-    /* เพิ่มระยะห่างภายใน */
-    margin: 20px auto;
-    /* จัดให้อยู่กลาง */
-    background-color: #f9f9f9;
-    /* เพิ่มพื้นหลังสีอ่อน */
-    border-radius: 10px;
-    /* ทำมุมโค้งมน */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* เพิ่มเงา */
-
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
+#firsttext {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.8;
+  color: #333;
+  font-family: "Roboto", "Open Sans", Arial, sans-serif;
+}
+#heart {
+  width: 1.2em;
+  vertical-align: middle;
+}
+
+#fstar {
+  width: 1.2em;
+  vertical-align: middle;
+}
 #phbd {
-    margin: 0;
-    font-size: 18px;
-    /* ขนาดตัวอักษร */
-    line-height: 1.8;
-    /* ระยะห่างระหว่างบรรทัด */
-    color: #333;
-    /* สีตัวอักษร */
-    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
-    
-    /* แอนิเมชั่นสำหรับข้อความแรก */
+  margin-top: 2%;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  text-align: center;
+  color: #333;
+  font-family: "Roboto", "Open Sans", Arial, sans-serif;
+}
 
-}
-#firsttext{
-    margin: 0;
-    font-size: 18px;
-    /* ขนาดตัวอักษร */
-    line-height: 1.8;
-    /* ระยะห่างระหว่างบรรทัด */
-    color: #333;
-    /* สีตัวอักษร */
-    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
-    
-}
-#fstar{
-    width: 10%;
-}
-#hbdtext p:last-child {
-    margin-top: 20px;
-    /* เพิ่มระยะห่างระหว่างข้อความ */
-    font-style: italic;
-    /* ทำให้ข้อความดูเด่น */
-    color: #555;
-    /* สีที่อ่อนลง */
-    animation: fadeIn 3s ease-in-out;
-    /* ข้อความสุดท้ายปรากฏช้ากว่า */
-
+#endtext {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-        /* เริ่มจากตำแหน่งที่ต่ำกว่า */
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-        /* เลื่อนมาในตำแหน่งเดิม */
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-#hbdtext {
-    animation: fadeInUp 2s ease-in-out;
-    /* ใช้แอนิเมชั่น fadeInUp */
+.polarnorth {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  margin-top: 10%;
 }
 
-.hiddenpic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
+.polaroid {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px 40px 10px;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin-bottom: 20px;
 }
 
-#hiddenpicuture {
-    display: flex; /* ใช้ Flexbox เพื่อจัดการตำแหน่งลูกภายใน */
-    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
-    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
-    width: 80%;
-    height: auto; /* ให้ขนาดรูปปรับตามเนื้อหา */
-    
+.polarpic {
+  width: 100%;
+  height: 100%;
+}
+#crown {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  transform: rotate(30deg);
+  width: 40%;
+  height: 30%;
+}
+#bear {
+  position: absolute;
+  left: -40px;
+  bottom: -30px;
+  transform: rotate(-30deg);
+  width: 40%;
+  height: 30%;
+}
+#rotate_right {
+  position: relative;
+  transform: rotate(7deg);
 }
 
-#hidden {
-    width: 100%; /* รูปภาพครอบคลุมพื้นที่ */
-    height: auto; /* รักษาสัดส่วนของรูปภาพ */
-    object-fit: cover; /* ป้องกันการบิดเบี้ยวของรูปภาพ */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 10%;
+#rotate_left {
+  position: relative;
+  transform: rotate(-8deg);
 }
-
-#crown{
-    position: absolute;
-    top: -30;
-    right: 0;
-    transform: rotate(20deg);
-    width: 20%;
-    height: 15%;
+#rotate_a {
+  position: relative;
+  transform: rotate(-5deg);
+}
+#rotate_b {
+  position: relative;
+  transform: rotate(5deg);
 }

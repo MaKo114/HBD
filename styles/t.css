@@ -150,14 +150,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5%;
   margin-top: 10%;
+}
+.inputPass{
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+  margin-top: 10%;
+}
+#Password{
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
 }
 .charname {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .c {
   display: flex;
@@ -180,39 +196,41 @@ input[type="text"] {
   font-family: "Playwrite RO", cursive;
   text-align: center;
   font-optical-sizing: auto;
-  font-weight: 1000;
+  font-weight: bold;
   text-transform: uppercase;
   font-style: normal;
   font-size: 2rem;
   color: pink;
 }
 .btn {
-  margin: 5%;
+  margin: 0;
 }
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
 }
 #cilckhere {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
+  margin-bottom: 5%;
 }
 #clickheretext {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-family: "Bebas Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: bold;
-  font-size: 1.2rem;
-  color: #000000c4;
+  font-size: 1.5rem;
+  color: #ffffffc4;
 }
 #enter {
   background-color: transparent;
   border: none;
 }
 #gift {
-  width: 4em;
+  width: 7em;
   vertical-align: middle;
 }
 
@@ -241,7 +259,7 @@ input[type="text"] {
   font-weight: bold;
   line-height: 1.8;
   color: #333;
-  font-family: "Roboto", "Open Sans", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 #heart {
   width: 1.2em;
@@ -258,15 +276,19 @@ input[type="text"] {
   line-height: 1.8;
   text-align: center;
   color: #333;
-  font-family: "Sriracha", cursive;
   /* font-family: "Sriracha", cursive; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 }
 
 #endtext {
-  margin-top: 20px;
+  /* margin-top: 10px; */
   font-style: italic;
   color: #555;
+  /* font-family: "Sriracha", cursive; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+
 }
 
 @keyframes fadeInUp {

@@ -57,12 +57,12 @@ boxes.forEach((box, index) => {
 });
 window.onload = function () {
   setTimeout(() => {
-      document.body.classList.add("fade-in");
+    document.body.classList.add("fade-in");
   }, 500);
 };
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
   setTimeout(() => {
-      window.location.reload(); // รีเฟรชหลังจาก ScrollTo ด้านบน
+    window.location.reload(); // รีเฟรชหลังจาก ScrollTo ด้านบน
   }, 100);
 };

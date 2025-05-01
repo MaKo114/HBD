@@ -24,10 +24,10 @@ body {
   /* height: 170vh; */
   height: 170vh;
   animation: fadeIn 2s ease-in-out;
+  position: relative;
 }
 
 .hbd {
-    position: relative;
   width: 100%;
   /* max-width: 600px; */
   padding: 20px;
@@ -36,14 +36,14 @@ body {
   box-sizing: border-box;
   margin-top: 10%;
 }
-#hbdflag{
-    position: absolute;
-    /* 
+#hbdflag {
+  position: absolute;
+  /* 
     left : -20px; */
-    /* z-index: -1; */
-    width: 100%;
-    height: auto;
-    /* transform: rotate(-30deg); */
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  /* transform: rotate(-30deg); */
 }
 
 .text {
@@ -54,11 +54,6 @@ body {
   font-family: "Bebas Neue", sans-serif;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* .dao {
-  width: 15%;
-  vertical-align: middle;
-} */
 
 #hap {
   display: flex;
@@ -88,18 +83,19 @@ body {
   margin-top: 2%;
 }
 .pic {
-    position: relative;
+  position: relative;
   margin-top: 5%;
 }
-#ribbon{
-    position: absolute;
-    width: 20%;
-    height: auto;
-    z-index: 2;
-    top: 10px;
-    right: -10px;
-    transform: rotate(30deg);
+#ribbon {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  z-index: 2;
+  top: 10px;
+  right: -10px;
+  transform: rotate(30deg);
 }
+
 .swiper {
   width: 90vw;
   max-width: 235px;
@@ -184,8 +180,7 @@ input[type="text"] {
   font-style: normal;
   font-size: 2rem;
   color: rgb(255, 162, 244);
-  
-} 
+}
 .btn {
   margin: 5%;
 }
@@ -194,16 +189,18 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
 }
-#cilckhere p {
+#cilckhere {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  font-size: 1rem;
+  margin: 0;
+}
+#clickheretext {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: "Bebas Neue", sans-serif;
-  color: #000000;
-  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000000c4;
 }
 #enter {
   background-color: transparent;

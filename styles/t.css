@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
   background: linear-gradient(to right, #ff9a9e, #fad0c4);
   /* height: 170vh; */
-  min-height: 100vh;
+  min-height: 170vh;
   animation: fadeIn 2s ease-in-out;
 }
 

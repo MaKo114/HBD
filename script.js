@@ -14,7 +14,9 @@ function checkPassword() {
     const endtext = document.getElementById("showtext");
     const picturedisplay = document.getElementById("polarnorth");
     const body = document.querySelector("body");
-    body.style.height = "300vh";
+    body.style.height = "auto";
+    // body.style.height = "300vh";
+
 
     textdisplay.style.display = "block";
     textdisplay.style.animation = "fadeInUp 2s ease-in-out";
@@ -59,10 +61,4 @@ window.onload = function () {
   setTimeout(() => {
     document.body.classList.add("fade-in");
   }, 500);
-};
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-  setTimeout(() => {
-    window.location.reload(); // รีเฟรชหลังจาก ScrollTo ด้านบน
-  }, 100);
 };

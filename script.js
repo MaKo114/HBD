@@ -10,14 +10,12 @@ function checkPassword() {
   const sumChar = c1 + c2 + c3 + c4 + c5 + c6;
 
   if (sumChar === correct) {
-    navigator.vibrate(200);
+    
     const textdisplay = document.getElementById("hbdtext");
     const endtext = document.getElementById("showtext");
     const picturedisplay = document.getElementById("polarnorth");
     const body = document.querySelector("body");
-    body.style.height = "auto";
-    // body.style.height = "300vh";
-    
+    body.style.height = "auto";    
 
 
     textdisplay.style.display = "block";

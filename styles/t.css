@@ -27,11 +27,23 @@ body {
 }
 
 .hbd {
+    position: relative;
   width: 100%;
-  max-width: 600px;
+  /* max-width: 600px; */
   padding: 20px;
+  /* border-left: 1px solid black;
+  border-right: 1px solid black; */
   box-sizing: border-box;
   margin-top: 10%;
+}
+#hbdflag{
+    position: absolute;
+    /* 
+    left : -20px; */
+    /* z-index: -1; */
+    width: 100%;
+    height: auto;
+    /* transform: rotate(-30deg); */
 }
 
 .text {
@@ -40,13 +52,13 @@ body {
   align-items: center;
   margin-bottom: 0;
   font-family: "Bebas Neue", sans-serif;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.dao {
+/* .dao {
   width: 15%;
   vertical-align: middle;
-}
+} */
 
 #hap {
   display: flex;
@@ -76,7 +88,17 @@ body {
   margin-top: 2%;
 }
 .pic {
+    position: relative;
   margin-top: 5%;
+}
+#ribbon{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    z-index: 2;
+    top: 10px;
+    right: -10px;
+    transform: rotate(30deg);
 }
 .swiper {
   width: 90vw;
@@ -151,15 +173,19 @@ input[type="text"] {
   padding: 10%;
   border: none;
   border-radius: 10px;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "Single Day", cursive;
   background-color: #fff8f0;
-  color: rgb(255, 162, 244);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+
+  font-family: "Playwrite RO", cursive;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 2rem;
+  color: rgb(255, 162, 244);
+  
+} 
 .btn {
   margin: 5%;
 }
@@ -174,6 +200,8 @@ input[type="text"] {
   align-items: center;
   font-weight: bold;
   font-size: 1rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Bebas Neue", sans-serif;
   color: #000000;
   margin: 0;
 }

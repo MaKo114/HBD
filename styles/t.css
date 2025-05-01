@@ -29,13 +29,12 @@ body {
 
 .hbd {
   width: 100%;
-  /* max-width: 600px; */
+  max-width: 600px;
   padding: 20px;
-  /* border-left: 1px solid black;
-  border-right: 1px solid black; */
   box-sizing: border-box;
   margin-top: 10%;
 }
+<<<<<<< HEAD
 #hbdflag {
   position: absolute;
   /* 
@@ -45,6 +44,8 @@ body {
   height: auto;
   /* transform: rotate(-30deg); */
 }
+=======
+>>>>>>> parent of 2db9a4e (demo 1.1)
 
 .text {
   display: flex;
@@ -52,9 +53,17 @@ body {
   align-items: center;
   margin-bottom: 0;
   font-family: "Bebas Neue", sans-serif;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
+<<<<<<< HEAD
+=======
+.dao {
+  width: 15%;
+  vertical-align: middle;
+}
+
+>>>>>>> parent of 2db9a4e (demo 1.1)
 #hap {
   display: flex;
   justify-content: center;
@@ -83,6 +92,7 @@ body {
   margin-top: 2%;
 }
 .pic {
+<<<<<<< HEAD
   position: relative;
   margin-top: 5%;
 }
@@ -96,6 +106,10 @@ body {
   transform: rotate(30deg);
 }
 
+=======
+  margin-top: 5%;
+}
+>>>>>>> parent of 2db9a4e (demo 1.1)
 .swiper {
   width: 90vw;
   max-width: 235px;
@@ -169,17 +183,17 @@ input[type="text"] {
   padding: 10%;
   border: none;
   border-radius: 10px;
-  background-color: #fff8f0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-  font-family: "Playwrite RO", cursive;
   text-align: center;
-  font-optical-sizing: auto;
-  font-weight: 1000;
-  text-transform: uppercase;
-  font-style: normal;
   font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Single Day", cursive;
+  background-color: #fff8f0;
   color: rgb(255, 162, 244);
+<<<<<<< HEAD
+=======
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+>>>>>>> parent of 2db9a4e (demo 1.1)
 }
 .btn {
   margin: 5%;
@@ -193,6 +207,7 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   margin: 0;
 }
 #clickheretext {
@@ -201,6 +216,12 @@ input[type="text"] {
   font-weight: bold;
   font-size: 1rem;
   color: #000000c4;
+=======
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000000;
+  margin: 0;
+>>>>>>> parent of 2db9a4e (demo 1.1)
 }
 #enter {
   background-color: transparent;

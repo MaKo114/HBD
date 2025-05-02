@@ -5,7 +5,7 @@ function checkPassword() {
   const c4 = document.getElementById("c4").value.trim().toLowerCase();
   const c5 = document.getElementById("c5").value.trim().toLowerCase();
   const c6 = document.getElementById("c6").value.trim().toLowerCase();
-  const correct = "tonfon"; // เช่น minnie หรือ mint
+  const correct = "130547";
 
   const sumChar = c1 + c2 + c3 + c4 + c5 + c6;
 

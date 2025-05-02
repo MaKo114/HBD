@@ -1,10 +1,10 @@
-function checkPassword() {
-  const c1 = document.getElementById("c1").value.trim().toLowerCase();
-  const c2 = document.getElementById("c2").value.trim().toLowerCase();
-  const c3 = document.getElementById("c3").value.trim().toLowerCase();
-  const c4 = document.getElementById("c4").value.trim().toLowerCase();
-  const c5 = document.getElementById("c5").value.trim().toLowerCase();
-  const c6 = document.getElementById("c6").value.trim().toLowerCase();
+function checkPassword() { //.toLowerCase();
+  const c1 = document.getElementById("c1").value.trim()
+  const c2 = document.getElementById("c2").value.trim()
+  const c3 = document.getElementById("c3").value.trim()
+  const c4 = document.getElementById("c4").value.trim()
+  const c5 = document.getElementById("c5").value.trim()
+  const c6 = document.getElementById("c6").value.trim()
   const correct = "130547";
 
   const sumChar = c1 + c2 + c3 + c4 + c5 + c6;

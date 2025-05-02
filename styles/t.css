@@ -197,7 +197,7 @@ input[type="text"] {
   text-align: center;
   font-optical-sizing: auto;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-style: normal;
   font-size: 2rem;
   color: pink;
